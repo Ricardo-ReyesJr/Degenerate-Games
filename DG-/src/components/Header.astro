@@ -1,0 +1,27 @@
+---
+// src/components/Header.astro
+const {title} = Astro.props;
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title}</title>
+    </head>
+    <body>
+        <div>
+            <nav class="bg-gray-950 flex justify-between">
+                <h1 class="font-bold text-red-800 text-start text-xl m-2">Degenerate Games</h1>
+                <div class="flex flex-row items-center gap-5 mt-5 sm:justify-end sm:mt-0 sm:pl-5 m-2">
+                    <a class="font-medium text-white hover:text-red-500" href="#">Home</a>
+                    <a class="font-medium text-white hover:text-red-500" href="#">Projects</a>
+                    <a class="font-medium text-white hover:text-red-500" href="#">About Us</a>
+                    <a class="font-medium text-white hover:text-red-500" href="#">Contact</a>
+                </div>
+            </nav>
+        </div>
+       
+    </body>
+</html>
