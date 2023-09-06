@@ -1,24 +1,32 @@
 ---
 // src/pages/index.astro
 import SiteLayouts from '../layouts/SiteLayouts.astro';
+import '@fontsource/chango';
 ---
 
 <SiteLayouts class="bg-slate-400 flex flex-col min-h-screen">
     <div class="flex gap-5 m-5 justify-center">
         <div class="block rounded-2xl bg-slate-400 p-6 drop-shadow-sm">
-            <!-- <h4 class="mb-2 text-center text-xl font-medium leading-tight text-neutral-50 dark:text-neutral-50 uppercase">Our Mission</h4> -->
-            <img class="h-auto max-w-lg transition-all duration-300 rounded-2xl cursor-pointer" src="img/monkey.jpg" alt="monkey" />
-            <!-- <p class="mb-4 text-base text-neutral-50 dark:text-neutral-50 flex item-center justify-center text-ellipsis">Commited to creating the best games for everyone 
-                of all ages. We continue to strive to keep everyone happy with uniquely made iOS, iPadOS, & MacOS apps.
-            </p> -->
+            <img class="h-auto max-w-sm transition-all duration-300 rounded-2xl cursor-pointer" src="img/default.png" alt="monkey" />
+        </div>
+        <div class="block rounded-2xl bg-slate-400 p-6 drop-shadow-sm">
+            <h4 class="text-3xl text-center text-gray-700 font-bold">Our Mission</h4>
+            <p class="text-gray-700 text-center m-4 p-6" >To provide the experiance with video games be it on a computer, console, or smart device.
+                Originally we started an iPhone development company with the start of the Apple AppStore,
+                our primary goal was to develop games in the iOS enviorment. Our focus has changed to include other enviorments
+                and technologies.
+            </p>
+            <p class="text-gray-700 text-center m-4 p-6">We are Degenerate Games our team might be small
+                yet we can and will acheive our successes. Get ready for a new era of great and amazing thing to come
+                from our little gaming company.
+            </p>
         </div>
     </div>
-    <div>
         <div>
             <h3 class="text-3xl text-center text-gray-700 font-bold" id="projects">Projects</h3>
         </div>
     <div class="flex gap-5 m-5 justify-center">
-        <div class="block rounded-2xl bg-slate-400 p-6 drop-shadow-sm">
+        <div class="ml-2 block rounded-2xl bg-slate-400 p-6 drop-shadow-sm">
             <h4 class="text-gray-700 text-center text-lg m-6">Goth Girl</h4>
             <img class="h-auto max-w-xs transition-all duration-300 rounded-2xl" src="img/gothgirl.jpeg" alt="goth girl" />
             <p class="text-gray-700 text-center m-2">Goth girl is out for revenge.</p>
@@ -30,13 +38,25 @@ import SiteLayouts from '../layouts/SiteLayouts.astro';
                 into monkey so they can join their crazy monkey army.
             </p>
         </div>
-        <div class="block rounded-2xl bg-slate-400 p-6 drop-shadow-sm">
+        <div class="mr-2 block rounded-2xl bg-slate-400 p-6 drop-shadow-sm">
             <h4 class="text-gray-700 text-center text-lg m-6">Last Dragon</h4>
             <img class="h-auto max-w-lg transiton-all duration-300 rounded-2xl" src="img/dragon.jpg" alt="dragon" />
             <p class="text-gray-700 text-center m-8">The love story of a prince turned dragon and a lovely princess. Set out to find a cure to turn him to
                 to the hansome prince he once was.
             </p>
         </div>
+    </div>
+    <div>
+        <div>
+            <h3 class="text-3xl text-center text-gray-700 font-bold" id="about">About Us</h3>
+        </div>
+    </div>
+    <div class="rounded-2xl bg-slate-400 p-6 drop shadow-sm flex flex-row gap-5">
+        <img class="h-auto max-w-md transition-all duration-300 rounded-2xl" src="img/monkey.jpg" alt="monkey" />
+        <p class="text-end m-12 p-12">We are Degenerate Games, a Texas based gaming company. Started in 2008, our original
+            start was to develop iOS apps for the iPhone. Things have change and we need to change with the times.
+            Having a new direction in mind and building a team to create amazing thing for gamers of all ages.
+        </p>
     </div>
     </div>
 </SiteLayouts>
