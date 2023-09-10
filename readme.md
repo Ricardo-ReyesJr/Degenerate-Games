@@ -6,5 +6,4 @@ Dependencies:
 
 * Astro 
 * HTML
-* CSS
-* Tailwind
+* Tailwind CSS
