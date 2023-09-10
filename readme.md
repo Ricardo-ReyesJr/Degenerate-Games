@@ -7,3 +7,6 @@ Dependencies:
 * Astro 
 * HTML
 * Tailwind CSS
+* Using opnform.com to create the contact form.
+
+This is not complete there is still the resposiveness of the website that will need to be added.
